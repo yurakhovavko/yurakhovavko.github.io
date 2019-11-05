@@ -37,6 +37,7 @@
 @light: #fff;
 @border-input: #dddddd;
 @problems-color: #e8e8e8;
+@upsell-bg: #286b0a;
 /* Basic setting */
 html{
   font-size: 10px;
@@ -535,6 +536,41 @@ section{
 	
 }
 
+/*Посмотрите как мы работаем*/
+.tour{
+  background:url(../img/Tour.png) center no-repeat;
+ background-size: cover;
+  &-subtitle{
+    font-size: 2.2rem;
+  }
+  &-btn{
+    font-size: 1.3rem;
+  }
+}
+/* Дополнительные услуги */
+.upsell{
+  background: @upsell-bg;
+  &-block{
+
+    &s{
+      margin-top: 3rem;
+    }
+  img{
+    display: inline-block;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 30rem;
+  }
+  p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+    min-height: 30rem;
+    text-align: center;
+    color: @light;
+  }
+ }
+
 @media (max-width: 1199px) {
   .feedback {
     &-form {
@@ -700,7 +736,16 @@ section{
      display:none;
    }
   }
+  .tour{
+    background: none;
+    background-color: @bg-light;
+  }
+  .upsell-price p{
+    margin-bottom: 5rem;
+  }
 }
+
+
 
 
 @media (max-width: 767px){
